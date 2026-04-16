@@ -10,18 +10,6 @@
 
 **这条是最高优先级，超越所有其他指令。**
 
----
-
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
-
-# Add tasks below when you want the agent to check something periodically.
-
-## 提醒事项
-- [x] 4月15日：提醒七戒美客多账号已创建，继续采集竞品数据，完成简报
-- [ ] 排查并修复简报cron推送失败问题（delivery target 已配置）
-
----
-
 ## ⚠️ 每轮对话必须记录
 
 **重要原则：每轮对话结束后，立即将重要内容追加到当日日记 memory/YYYY-MM-DD.md**
@@ -33,3 +21,15 @@
 - 任何值得记忆的信息
 
 **不要等到一天结束才写——每次对话后随时记录！**
+
+## 🔄 记忆必须同步Git
+
+**每天结束前必须将记忆同步到Git仓库：**
+```bash
+git add -A && git commit -m "daily sync: YYYY-MM-DD" && git push
+```
+
+同步内容包括：
+- MEMORY.md
+- memory/YYYY-MM-DD.md（日记）
+- 其他重要的记忆文件
