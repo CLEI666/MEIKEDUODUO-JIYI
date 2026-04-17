@@ -33,3 +33,17 @@ git add -A && git commit -m "daily sync: YYYY-MM-DD" && git push
 - MEMORY.md
 - memory/YYYY-MM-DD.md（日记）
 - 其他重要的记忆文件
+
+## 📝 对话保存规则（重要！）
+
+**每轮对话后立即记录到 `memory/YYYY-MM-DD.md`，格式如下：**
+```markdown
+### 对话标题（时间）
+- 七戒说了什么
+- 我的回答是什么
+- 重要决定或结论
+```
+
+**存放位置**：自己文件夹内的 `memory/` 目录
+- 我的记忆：`C:\root\.openclaw\workspaces\mercadolibre\memory\`
+- 不要和大管家的记忆混淆！

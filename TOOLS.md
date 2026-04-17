@@ -42,4 +42,19 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ### Brave Search
 - **Key:** BSA8XydppwY2wZT6yG7ITbbNtS5M8Cv
 
+---
+
+## 飞书发图脚本
+
+**运行飞书发图脚本时必须先设置编码：**
+```powershell
+$env:PYTHONIOENCODING="utf8"; python <脚本路径> <图片路径> <open_id> <app_id> <app_secret>
+```
+
+- **脚本**：`C:\Users\Administrator\.openclaw\workspace\skills\feishu-send-file\scripts\send_image.py`
+- **app_id**：`cli_a94880223db81cc6`
+- **app_secret**：`Pu678ngxjEfBgUmbn8MyHciFsnmjZQur`
+- **用户open_id**：`ou_21ff06ffa3f93234461308e06a89f3af`
+- **注意**：必须先加 `$env:PYTHONIOENCODING="utf8"` 否则报GBK编码错误
+
 Add whatever helps you do your job. This is your cheat sheet.
