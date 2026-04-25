@@ -2,3 +2,4 @@
 {"type":"memory.recall.recorded","timestamp":"2026-04-17T23:15:32.541Z","query":"美客多每日简报 大麦数据 选品 1688采购","resultCount":1,"results":[{"path":"memory/2026-04-16.md","startLine":1,"endLine":37,"score":1}]}
 {"type":"memory.recall.recorded","timestamp":"2026-04-21T02:58:30.310Z","query":"美客多墨西哥站点 热销类目 热搜词 大麦数据 选品报告","resultCount":1,"results":[{"path":"memory/2026-04-16.md","startLine":1,"endLine":37,"score":1}]}
 {"type":"memory.recall.recorded","timestamp":"2026-04-21T08:40:21.895Z","query":"每日简报 cron 任务","resultCount":3,"results":[{"path":"memory/2026-04-14.md","startLine":28,"endLine":57,"score":1},{"path":"memory/2026-04-15.md","startLine":28,"endLine":52,"score":1},{"path":"memory/2026-04-18.md","startLine":1,"endLine":34,"score":1}]}
+{"type":"memory.recall.recorded","timestamp":"2026-04-23T23:15:25.481Z","query":"美客多简报 大麦数据 选品报告","resultCount":1,"results":[{"path":"memory/2026-04-16.md","startLine":1,"endLine":37,"score":1}]}
