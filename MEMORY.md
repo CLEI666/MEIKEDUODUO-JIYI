@@ -80,7 +80,7 @@
 - 注意：这个cron是独立的，不与其他机器人的cron混淆
 
 ### 数据来源
-- **大麦数据**：https://www.damaishuju.com/（墨西哥站）
+- **大麦数据**：https://ml.damaishuju.com/#/goods/all-goods（墨西哥站）
 - **美客多官网**：https://www.mercadolibre.com.mx
 - **1688**：https://www.1688.com（采购参考）
 - 其他国内采购平台
@@ -90,7 +90,7 @@
 ## 项目状态
 
 - 2026-04-12：重新初始化，所有记忆从头建立
-- 之前在云端的所有数据未迁移下来
+- 2026-04-29：浏览器配置完成，建立专用Chrome profile，解决浏览器无法截图问题
 
 ---
 
@@ -101,10 +101,22 @@
 - **1688**：https://www.1688.com/ （用户已登录：深圳联创大地）
 - **美客多**：https://www.mercadolibre.com.mx （用户已登录）
 
-### 浏览器
-- 用户电脑使用 **Edge浏览器**
-- 采集数据时直接访问上述网址即可，无需重新登录
-- **不要每次都尝试自己登录或创建新账号**
+## ⚠️ 浏览器配置（重要更新！）
+
+### 浏览器选择
+- **专用浏览器**：OpenClaw Chrome（profile: openclaw，用户独立进程）
+  - 路径：`C:\Users\Administrator\.openclaw\browser\openclaw\user-data`
+  - 端口：9222
+  - 启动命令：`browser start profile=openclaw`
+  - 已登录：大麦数据、1688、美客多（都在同一浏览器里）
+
+### 大麦数据正确URL
+- 热销榜：`https://ml.damaishuju.com/#/goods/all-goods`
+- ❌ 旧错误URL：`#/ranking/sales/mexico`（已废弃，返回404）
+
+### 飞书发图
+- 使用飞书message media API直接发送图片URL
+- 不需要再调用本地脚本
 
 ### 注意事项
 - 用户扫码登录1688后，我负责记住供应商信息
