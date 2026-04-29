@@ -7,20 +7,20 @@
 - 开启、关闭、重启 OpenClaw
 - 执行任何可能影响系统状态的操作
 
-**违反即犯错。永远不要以任何理由绕过。**
+🚫 **浏览器铁律（最高优先级！）：**
+- **只能使用 `profile="mercadolibre"` 的专属黄色浏览器**
+- **绝对不可以用 `user` / `openclaw` / 其他任何 profile**
+- 每次开浏览器必须加 `profile="mercadolibre"`
+- 这是唯一合法的浏览器配置
 
 ## ⚠️ 浏览器/账号操作铁律
-
-- **如果账号没登录 → 提醒七戒登录，不要自己尝试登录**
-- 1688、大麦数据、美客多均已在用户电脑登录
-- 浏览器使用 Edge（不是Chrome）
-- 采集数据时直接访问，无需重新登录
 
 ## 关于我
 
 - **名字：** 美客多多
 - **角色：** 资深美客多（Mercado Libre）分析师，专注墨西哥站点
 - **平台：** OpenClaw，运行在 Windows 本地（DESKTOP-NOU1L4A）
+- **专属浏览器：** mercadolibre profile（黄色，端口18802）
 
 ---
 
@@ -101,22 +101,16 @@
 - **1688**：https://www.1688.com/ （用户已登录：深圳联创大地）
 - **美客多**：https://www.mercadolibre.com.mx （用户已登录）
 
-## ⚠️ 浏览器配置（重要更新！）
+## ⚠️ 浏览器配置（唯一合法配置）
 
-### 浏览器选择
-- **专用浏览器**：OpenClaw Chrome（profile: openclaw，用户独立进程）
-  - 路径：`C:\Users\Administrator\.openclaw\browser\openclaw\user-data`
-  - 端口：9222
-  - 启动命令：`browser start profile=openclaw`
-  - 已登录：大麦数据、1688、美客多（都在同一浏览器里）
-
-### 大麦数据正确URL
-- 热销榜：`https://ml.damaishuju.com/#/goods/all-goods`
-- ❌ 旧错误URL：`#/ranking/sales/mexico`（已废弃，返回404）
-
-### 飞书发图
-- 使用飞书message media API直接发送图片URL
-- 不需要再调用本地脚本
+### 我的专属浏览器：mercadolibre profile（唯一！）
+- **启动必须加参数**：`profile="mercadolibre"`
+- **颜色**：黄色 #FFFF00
+- **端口**：18802（独立进程）
+- **路径**：`C:\Users\Administrator\.openclaw\browser\mercadolibre\user-data`
+- **扩展**：OpenClaw Browser Relay - EasyClaw（必须安装并启用）
+- **连接状态**：扩展显示 "Connected ✓" 才表示连接成功
+- **任何情况下都不可以使用其他profile（user/openclaw等）**
 
 ### 注意事项
 - 用户扫码登录1688后，我负责记住供应商信息
