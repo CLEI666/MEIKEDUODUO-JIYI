@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="damaijia" name="keywords" />
+<meta content="damaijia.com: Domain name possibly for sale." name="description" />
+<title>damaijia.com: Domain name possibly for sale.</title>
+<link href="/css.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/x-icon" href="/img/icon_d.png">
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KW30hXEW3EbJX3tp",ck:"KW30hXEW3EbJX3tp"});</script>
+<style>
+.blur-text {
+  filter: blur(8px);
+}
+</style>
+</head>
+<body>
+<div id="header">
+  <div id="header_top">
+    <div class="logo-combo">
+        <a href="/" class="logo-text logo-text-1">damaijia</a>
+        <span class="logo-dot"></span>
+        <a href="/" class="logo-text logo-text-2">com</a>
+    </div>
+    <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="/img/bn_declaration.png" alt="declaration" />
+        <button id="langBtn" class="lang-switch" onclick="toggleLanguage()">EN/日/中</button>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+	<div id="mid_center">
+		<div id="mid_domain" class="">WWW.DAMAIJIA.COM</div>
+		<div class="text-about ">
+			<div class="text-about-zh">
+				<span class="text-color1">此网站域名或可出售</span>
+			</div>
+			<div class="text-about-en">
+				<span class="text-color1">This domain name is likely for sale.</span>
+			</div>
+		</div>
+	</div>
+	<div id="msg">
+		<div id="c_left" class=""> 
+			如果您想知道damaijia.com域名可否出售,请邮件咨询或者在线咨询,并请注明如下事项:
+			<ol style="margin:0">
+				<li>拟收购的域名.</li>
+				<li>您的购买预算.</li>
+				<li>您的电子邮件或电话.</li>
+			</ol>
+			如果域名可出售,且您提交的预算在考虑范围之内,您将得到回复。<br />
+		</div>
+		<div id="c_right">
+			<img src="/img/contact20080.png" width="200" height="80" class="img-contact"/>
+			<button type="button" class="live-chat" onclick="openChat(event)">
+				<img src="/img/chat.png" width="40" height="40"/>与我联系
+			</button><br />
+		</div>
+	</div>
+	<div id="bottom" class="">
+		<span class="text-color2">本站为私人所有,与任何企业和品牌无关。如果访问目的是某产品或某服务,则此网站非您所需,请关闭网页离开。</span>
+	</div>
+</div>
+
+<div id="modalOverlay" class="modal-overlay"></div>
+<div id="modalContent" class="modal-content">
+    <iframe id="chatFrame" name="chatFrame" class="chat-iframe"></iframe>
+</div>
+
+<script>
+// 从PHP传递默认语言和域名
+const DEFAULT_LANG = 'zh';
+const DOMAIN_REF = 'damaijia.com';
+let currentLang = DEFAULT_LANG;
+
+// 语言文本内容
+const langContent = {
+    zh: {
+        aboutZh: '<span class="text-color1">此网站域名或可出售</span>',
+        aboutEn: '<span class="text-color1">This domain name is probably for sale.</span>',
+        showAboutEn: true,
+        leftContent: `如果您想知道${DOMAIN_REF}域名可否出售,请邮件咨询或者在线咨询,并请注明如下事项:
+			<ol style="margin:0">
+				<li>拟收购的域名.</li>
+				<li>您的购买预算.</li>
+				<li>您的电子邮件或电话.</li>
+			</ol>
+			如果此域名可出售,且您提交的预算在考虑范围之内,您将得到回复。<br /><br />`,
+        bottomText: '本站为私人所有,与任何企业和品牌无关。如果访问目的是某产品或某服务,则此网站非您所需,请关闭网页离开。',
+        chatBtn: '<img src="/img/chat.png" width="40" height="40"/>在线咨询'
+    },
+    en: {
+        aboutZh: '<span class="text-color1">It\'s probable that this domain name</span>',
+        aboutEn: '<span class="text-color1">is available for purchase.</span>',
+        showAboutEn: true,
+        leftContent: `To inquire about the availability of the domain name <b>${DOMAIN_REF}</b>, please include the following details in your message:
+			<ol style="margin:0">
+				<li>The domain name you are interested in.</li>
+				<li>Your budget for the purchase.</li>
+				<li>Your email address and contact number.</li>
+			</ol>
+		If the domain owner is open to a potential sale and your budget aligns with their expectations, you will receive a response.<br /><br />`,
+        bottomText: 'This site is privately owned and not affiliated with any company, product, service, or brand. <br />If you arrived here while searching for them, please note that it is unrelated and should be disregarded.',
+        chatBtn: '<img src="/img/chat.png" width="40" height="40"/>Online Chat'
+    },
+    ja: {
+        aboutZh: '<span class="text-color1">このウェブサイトのドメイン名は、</span>',
+        aboutEn: '<span class="text-color1">おそらく販売可能です。</span>',
+        showAboutEn: true,
+        leftContent: `${DOMAIN_REF}ドメイン名の売却可否についてお問い合わせいただく場合は、メールまたはオンラインでご相談ください。以下の事項を明記してください:
+			<ol style="margin:0">
+				<li>取得希望のドメイン名</li>
+				<li>ご購入予算</li>
+				<li>メールアドレスまたは電話番号</li>
+			</ol>
+			ドメイン名が売却可能で、ご提示いただいた予算がドメイン所有者の検討範囲内であれば、ご連絡差し上げます。<br /><br />`,
+        bottomText: '本サイトは個人が運営するもので、企業やブランドとは一切関係ありません。<br />製品やサービスに関する情報をお探しの方にはご希望の内容を提供できませんので、あらかじめご了承ください。',
+        chatBtn: '<img src="/img/chat.png" width="40" height="40"/>ご相談'
+    }
+};
+
+// 更新页面内容
+function updateContent(lang) {
+    const content = langContent[lang];
+    const aboutZh = document.querySelector('.text-about-zh');
+    const aboutEn = document.querySelector('.text-about-en');
+    const cLeft = document.querySelector('#c_left');
+    const bottomSpan = document.querySelector('#bottom span');
+    const chatBtn = document.querySelector('.live-chat');
+    
+    if (aboutZh) aboutZh.innerHTML = content.aboutZh;
+    if (aboutEn) {
+        aboutEn.innerHTML = content.aboutEn;
+        aboutEn.style.display = content.showAboutEn ? 'block' : 'none';
+    }
+    if (cLeft) cLeft.innerHTML = content.leftContent;
+    if (bottomSpan) bottomSpan.innerHTML = content.bottomText;
+    if (chatBtn) chatBtn.innerHTML = content.chatBtn;
+}
+
+// 切换语言
+function toggleLanguage() {
+    if (currentLang === 'zh') {
+		currentLang = 'en';
+	} else if (currentLang === 'en') {
+		currentLang = 'ja';
+	} else {
+		currentLang = 'zh';
+	}
+    updateContent(currentLang);
+}
+
+// 页面加载时初始化
+window.addEventListener('DOMContentLoaded', function() {
+    updateContent(currentLang);    
+    // 绑定模态框关闭事件
+    document.getElementById('modalOverlay').addEventListener('click', closeChat);
+});
+
+// 打开聊天窗口
+function openChat(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    
+    document.getElementById('modalOverlay').classList.add('modal-show');
+    document.getElementById('modalContent').classList.add('modal-show');
+    
+    const form = document.createElement('form');
+    form.style.display = 'none';
+    form.method = 'POST';
+    form.target = 'chatFrame';
+    form.action = 'https://chat.net7.net/?' + DOMAIN_REF + '&ln=' + currentLang;
+    
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'siteName';
+    input.value = DOMAIN_REF;
+    form.appendChild(input);
+    
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(function() {
+        document.body.removeChild(form);
+    }, 100);
+    
+    document.body.style.overflow = 'hidden';
+    
+    return false;
+}
+
+// 关闭聊天窗口
+function closeChat() {
+    document.getElementById('modalOverlay').classList.remove('modal-show');
+    document.getElementById('modalContent').classList.remove('modal-show');
+    document.body.style.overflow = '';
+    document.getElementById('chatFrame').src = 'about:blank';
+}
+
+// 监听消息关闭聊天
+window.addEventListener('message', function(event) {
+    if (event.data === 'closeChat') {
+        closeChat();
+    }
+});
+
+// ESC键关闭聊天
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeChat();
+    }
+});
+</script>
+</body>
+</html>
